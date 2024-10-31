@@ -1,0 +1,11 @@
+ For this 8-queen problem, we used Genetic Algorithm to solve it. 
+ First, we talk about the Game class. A Game object hold onto 3 main attributes the board, 
+the position of the student number queen, fitness value of the board. For the board, it is 
+represented as a 1D array, for e.g: [0,1,2,3,4,5,6,7], the index of the array is the 
+x-position and the value is the y-position, (0,0) would be the bottom left. The fitness 
+value is how many non-conflicted pairs of queens there are.
+ 
+ For this Genetic Algorithm, we implemented a tournament selection for the parents, and used 
+one-point crossover to generate the children. As Genetic Algorithm is stochastic, we used Depth
+First Search to generate every possible solution to check all possible solutions for GA.
+
